@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.5 on win32)" generated="2026-09-14T22:54:39.053983" rpa="false" schemaversion="5">
+<suite id="s1" name="Senario2" source="E:\Doc\Code\GitHub\SQA\SQALAB11\SQA-Lab11\senario2\Senario2.robot">
+<test id="s1-t1" name="UAT-Lab11-002: Request Vehicle Insurance Quote Unsuccessfully" line="10">
+<kw name="Open Insurance Main Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:40.571560" level="INFO">Opening browser 'Chrome' to base url 'http://sampleapp.tricentis.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-14T22:54:40.571138" elapsed="12.665829"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-14T22:54:53.237264" elapsed="0.043915"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:nav_automobile</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-14T22:54:53.281547" elapsed="0.047376"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:54:40.569624" elapsed="12.759517"/>
+</kw>
+<kw name="Enter Invalid Vehicle Data For Automobile">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:53.330893" level="INFO">Clicking element 'id:nav_automobile'.</msg>
+<arg>id:nav_automobile</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:54:53.330436" elapsed="1.987634"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:make</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-14T22:54:55.318396" elapsed="0.020163"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:55.339230" level="INFO">Clicking button 'id:nextenterinsurantdata'.</msg>
+<arg>id:nextenterinsurantdata</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:54:55.338856" elapsed="0.121529"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://a[@id='entervehicledata']//span[contains(@class,'counter')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-14T22:54:55.460732" elapsed="0.030727"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:55.633816" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="01_Error_VehicleData.png"&gt;&lt;img src="01_Error_VehicleData.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>filename=01_Error_VehicleData.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-14T22:54:55.491760" elapsed="0.142303"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:54:53.329866" elapsed="2.304484"/>
+</kw>
+<kw name="Enter Incomplete Insurance Data">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:55.636560" level="INFO">Clicking element 'id:enterinsurantdata'.</msg>
+<arg>id:enterinsurantdata</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:54:55.636226" elapsed="0.078090"/>
+</kw>
+<arg>Click Element</arg>
+<arg>id:enterinsurantdata</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-09-14T22:54:55.635484" elapsed="0.079016"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-14T22:54:56.715864" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-09-14T22:54:55.714727" elapsed="1.001335"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:56.717192" level="INFO">Clicking button 'id:nextenterproductdata'.</msg>
+<arg>id:nextenterproductdata</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:54:56.716901" elapsed="0.093459"/>
+</kw>
+<arg>Click Button</arg>
+<arg>id:nextenterproductdata</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-09-14T22:54:56.716354" elapsed="0.094200"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://a[@id='enterinsurantdata']//span[contains(@class,'counter')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-14T22:54:56.810795" elapsed="0.020564"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:57.001370" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="02_Error_InsuranceData.png"&gt;&lt;img src="02_Error_InsuranceData.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>filename=02_Error_InsuranceData.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-14T22:54:56.831638" elapsed="0.169935"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:54:55.635027" elapsed="1.366727"/>
+</kw>
+<kw name="Enter Incomplete Product Data">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:57.003876" level="INFO">Clicking element 'id:enterproductdata'.</msg>
+<arg>id:enterproductdata</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:54:57.003502" elapsed="0.069093"/>
+</kw>
+<arg>Click Element</arg>
+<arg>id:enterproductdata</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-09-14T22:54:57.002879" elapsed="0.069923"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-14T22:54:58.073856" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-09-14T22:54:57.073081" elapsed="1.000976"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:58.075620" level="INFO">Clicking button 'id:nextselectpriceoption'.</msg>
+<arg>id:nextselectpriceoption</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:54:58.075186" elapsed="0.103038"/>
+</kw>
+<arg>Click Button</arg>
+<arg>id:nextselectpriceoption</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-09-14T22:54:58.074342" elapsed="0.104110"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://a[@id='enterproductdata']//span[contains(@class,'counter')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-14T22:54:58.178772" elapsed="0.022502"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:58.333856" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="03_Error_ProductData.png"&gt;&lt;img src="03_Error_ProductData.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>filename=03_Error_ProductData.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-14T22:54:58.201621" elapsed="0.132456"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:54:57.002354" elapsed="1.331924"/>
+</kw>
+<kw name="Verify Package Selection Is Blocked">
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:58.363117" level="INFO">Element 'id:selectsilver' exists but is not displayed.</msg>
+<arg>id:selectsilver</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2026-09-14T22:54:58.335753" elapsed="0.027519"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:54:58.493935" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="04_SelectionBlocked.png"&gt;&lt;img src="04_SelectionBlocked.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>filename=04_SelectionBlocked.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-14T22:54:58.363528" elapsed="0.130728"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:54:58.334992" elapsed="0.159528"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-14T22:54:58.495185" elapsed="2.284725"/>
+</kw>
+<doc>ทดสอบการขอใบเสนอราคาสำหรับรถยนต์ไม่สำเร็จเนื่องจากข้อมูลไม่ครบถ้วน พร้อมแคปรูปหลักฐาน</doc>
+<status status="PASS" start="2026-09-14T22:54:40.567278" elapsed="20.213006"/>
+</test>
+<doc>Lab11: Automated Testing for Tricentis Vehicle Insurance Application (UAT-Lab11-002)</doc>
+<status status="PASS" start="2026-09-14T22:54:39.057061" elapsed="21.724389"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Senario2" id="s1" pass="1" fail="0" skip="0">Senario2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
